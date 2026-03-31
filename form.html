@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Form Validation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./form.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <form class="myform" novalidate>
+    <h2>Registration Form</h2>
+
+    <div class="input-group">
+      <label for="fname">First name : </label>
+      <input id="fname" type="text">
+
+
+      <small class="error"></small>
+    </div>
+
+    <div class="input-group">
+      <label for="lname">Last name : </label>
+      <input id="lname" type="text">
+
+      <small class="error"></small>
+    </div>
+
+    <div class="input-group">
+      <label for="dobId">Date of birth : </label>
+      <input id="dobId" type="date">
+
+      <small class="error"></small>
+    </div>
+
+    <div class="input-group">
+      <label for="mobileId">Mobile : </label>
+      <input id="mobileId" type="tel" inputmode="numeric">
+
+      <small class="error"></small>
+    </div>
+
+    <div class="input-group">
+      <label for="mailId">Email :</label>
+      <input id="mailId" type="email">
+
+      <small class="error"></small>
+    </div>
+
+    <div class="input-group">
+      <label for="passId">Password : </label>
+      <input id="passId" type="password">
+
+      <small class="error"></small>
+    </div>
+
+    <div class="input-group">
+      <label for="confirm">Confirm password : </label>
+      <input id="confirm" type="password">
+
+      <small class="error"></small>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="./form.js"></script>
+</body>
+
+</html>
